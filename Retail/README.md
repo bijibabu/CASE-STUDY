@@ -6,3 +6,9 @@ A data lake centralizes raw data, allowing easy storage and access. It supports 
  ### Prerequisites
  * An Azure account with sufficient credits.
  * Access to an on-premises SQL Server database.
+###Step 1: Azure Environment Setup
+1.Create Resource Group: Set up a new resource group in Azure.
+2.Provision Services:
+   *Create an Azure Data Factory instance.
+   *Set up Azure Data Lake Storage with bronze, silver, and gold containers.
+  

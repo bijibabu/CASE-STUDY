@@ -23,7 +23,7 @@
   * Create a new database for your dataset 
   * Click on new query and write a SQL query to create a table.
 
-## Step 2: Http API database
+## Step 2: HTTP API database
 * Choose a framework/platform (e.g., Flask, Express.js, ASP.NET).
 * Define API endpoints and HTTP methods (GET, POST, PUT, DELETE).
 * Implement request handling and data processing logic.

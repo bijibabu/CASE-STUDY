@@ -1,4 +1,4 @@
---creatind a coustomer table
+--creating a coustomer table
 
 CREATE TABLE customers (
 	customer_id INT PRIMARY KEY,

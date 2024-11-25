@@ -45,5 +45,6 @@
  * create dataset for adls and sql server
  * upload the data to the source and the sink
  * click publish and trigger
+   
 Data has been succesfully transfered from sql server &api to the bronze container in datalake storage account   
   

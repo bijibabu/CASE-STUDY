@@ -20,8 +20,8 @@
 * Download the installer from the official Microsoft SSMS page.
 * Run the installer and follow the prompts to complete the installation.  
   ### Creating the tables
-  *Create a new database for your dataset 
-  *Click on new query and write a SQL query to create a table.
+  * Create a new database for your dataset 
+  * Click on new query and write a SQL query to create a table.
 
 
   

@@ -18,10 +18,19 @@
  SQL Server Management Studio (SSMS) is a powerful tool for managing SQL Server databases
  ### Install SSMS:
 * Download the installer from the official Microsoft SSMS page.
-* Run the installer and follow the prompts to complete the installation.  
-  ### Creating the tables
+* Run the installer and follow the prompts to complete the installation.
+   ### Creating the tables
   * Create a new database for your dataset 
   * Click on new query and write a SQL query to create a table.
 
+## Step 2: Http API database
+* Choose a framework/platform (e.g., Flask, Express.js, ASP.NET).
+* Define API endpoints and HTTP methods (GET, POST, PUT, DELETE).
+* Implement request handling and data processing logic.
+* Return responses in formats like JSON or XML.
+* Secure the API with authentication, authorization, and encryption.
+* Test the API using tools like Postman.
+* Deploy the API to a hosting platform for access.
+here we are mimicing the http api by just taking the url from github.after uploading the data into it or by using sample public api.
 
-  
+  Here all the data is been provided by the backend team for the project

@@ -31,6 +31,6 @@
 * Secure the API with authentication, authorization, and encryption.
 * Test the API using tools like Postman.
 * Deploy the API to a hosting platform for access.
-here we are mimicing the http api by just taking the url from github.after uploading the data into it or by using sample public api.
 
-  Here all the data is been provided by the backend team for the project
+   Here we are mimicing the http api by just taking the url from github.after uploading the data into it or by using sample public api.Here all the data is been provided by the backend team for the project
+

@@ -14,9 +14,11 @@
 * SQL Server (On-Premises): Source of data.
 * Http API :source of data
 
- ## Step 1: Azure Environment Setup
-* Create Resource Group: Set up a new resource group in Azure.
-* Create an Azure Data Factory instance.
-* Set up Azure Data Lake Storage with bronze, silver, and gold containers.  
+ ## Step 1:  on-premises SQL Server database
+ SQL Server Management Studio (SSMS) is a powerful tool for managing SQL Server databases
+ ### Install SSMS:
+* Download the installer from the official Microsoft SSMS page.
+* Run the installer and follow the prompts to complete the installation.
+  
   
   

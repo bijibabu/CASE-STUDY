@@ -33,4 +33,17 @@
 * Deploy the API to a hosting platform for access.
 
    Here we are mimicing the http api by just taking the url from github.after uploading the data into it or by using sample public api.Here all the data is been provided by the backend team for the project
-
+  
+## Step 3: Azure Environment Setup
+* Create Resource Group: Set up a new resource group in Azure.
+* Create an Azure Data Factory instance.
+* Set up Azure Data Lake Storage with bronze, silver, and gold containers.
+### Ingest Data with ADF
+ * setting up of Integration Runtime in Azure Data Factory
+ * create linked service for sql server and adls
+ * use countineous integration to the pipeline
+ * create dataset for adls and sql server
+ * upload the data to the source and the sink
+ * click publish and trigger  
+data has been succesfully transfered from sql server &api to the bronze container in datalake storage account   
+  

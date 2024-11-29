@@ -41,16 +41,18 @@ Select "Self-Hosted" Runtime and Continue → Name the Integration Runtime and C
 Download SHIR Software and Copy Authentication Key → Install SHIR Software on Host Machine → Paste Authentication Key During Setup → Verify Installation in ADF (Status: Running) →Test Connectivity to On-Premises Resources →SHIR Ready for Use
 
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
- 
+ ## GitHub Integration:
+    * Linked ADF to a GitHub repository for version control and team collaboration.
+    * I made sure the repository was connected to the Dev branch. 
+
+
  ### create linked service in ADF
  
  1.Microsoft SQL Server 
      ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslink.png?raw=true)
  2. HTTP API 
 ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/httplink.png?raw=true)
-3. GitHub 
-  Linked Azure Data Factory (ADF) to GitHub by creating a repository named CASESTUDY 
-  and made sure the repository was connected to the Dev branch. 
+
 
 ###  Creating Pipelines in ADF    
  1.Microsoft SQL Server to Storage:
@@ -76,7 +78,14 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
   successfully in the QA branch of Data Factory.
   
 # Data Transformation in Databricks
-  
-   
+* Created a Databricks workspace and mounted the raw containers from 
+ ADLS Gen2 to Databricks using secret scopes for secure access. 
+     dbutils.fs.mount(
+    source="wasbs://raw@<storage_account>.blob.core.windows.net",
+    mount_point="/mnt/raw",
+    extra_configs={"fs.azure.account.key.<storage_account>.blob.core.windows.net": 
+                   dbutils.secrets.get(scope="<scope_name>", key="<key_name>")}
+)
+
 
   

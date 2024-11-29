@@ -33,10 +33,17 @@ HTTP API (from[https://dummyjson.com/products] in JSON format)
 * Create Resource Group: Set up a new resource group in Azure.
 * Create an Azure Data Factory instance.
 * Set up Azure Data Lake Storage with bronze, silver, and gold containers.
-### Ingest Data with ADF
- * setting up of Integration Runtime in Azure Data Factory
+## Ingest Data with ADF
+### Microsoft SQL Server to Storage: 
+ * setting  a self-hosted integration runtime. This enabled  to connect to the opremise 
+   SQL Server. 
+
+   Go to  Integration Runtimes in ADF → Click on + New to Add Integration Runtime →
+Select "Self-Hosted" Runtime and Continue → Name the Integration Runtime and Create →
+Download SHIR Software and Copy Authentication Key → Install SHIR Software on Host Machine → Paste Authentication Key During Setup → Verify Installation in ADF (Status: Running) →Test Connectivity to On-Premises Resources →SHIR Ready for Use
+
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
-   
+ 
  * create linked service for sql server and adls
  * use countineous integration to the pipeline
  * create dataset for adls and sql server

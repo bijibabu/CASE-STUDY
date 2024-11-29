@@ -27,15 +27,7 @@
     ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslogin.png?raw=true)
 
 ## Step 2: HTTP API database
-* Choose a framework/platform (e.g., Flask, Express.js, ASP.NET).
-* Define API endpoints and HTTP methods (GET, POST, PUT, DELETE).
-* Implement request handling and data processing logic.
-* Return responses in formats like JSON or XML.
-* Secure the API with authentication, authorization, and encryption.
-* Test the API using tools like Postman.
-* Deploy the API to a hosting platform for access.
-
-   Here we are mimicing the http api by just taking the url from github.after uploading the data into it or by using sample public api.Here all the data is been provided by the backend team for the project
+HTTP API (from[https://dummyjson.com/products] in JSON format)
   
 ## Step 3: Azure Environment Setup
 * Create Resource Group: Set up a new resource group in Azure.
@@ -43,6 +35,8 @@
 * Set up Azure Data Lake Storage with bronze, silver, and gold containers.
 ### Ingest Data with ADF
  * setting up of Integration Runtime in Azure Data Factory
+ ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
+   
  * create linked service for sql server and adls
  * use countineous integration to the pipeline
  * create dataset for adls and sql server

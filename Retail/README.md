@@ -63,5 +63,6 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
   format. 
 * The data was stored in the raw container in Azure Data Lake Storage (ADLS) 
   Gen2 in Parquet format.
+   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
 
   

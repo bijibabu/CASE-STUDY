@@ -34,11 +34,9 @@ HTTP API (from[https://dummyjson.com/products] in JSON format)
 * Create an Azure Data Factory instance.
 * Set up Azure Data Lake Storage with bronze, silver, and gold containers.
 ## Ingest Data with ADF
-### Microsoft SQL Server to Storage: 
- *  created a self-hosted integration runtime. This enabled  to connect to the opremise 
-   SQL Server. 
+###  created a self-hosted integration runtime
 
-   Go to  Integration Runtimes in ADF → Click on + New to Add Integration Runtime →
+ Go to  Integration Runtimes in ADF → Click on + New to Add Integration Runtime →
 Select "Self-Hosted" Runtime and Continue → Name the Integration Runtime and Create →
 Download SHIR Software and Copy Authentication Key → Install SHIR Software on Host Machine → Paste Authentication Key During Setup → Verify Installation in ADF (Status: Running) →Test Connectivity to On-Premises Resources →SHIR Ready for Use
 
@@ -50,20 +48,32 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
      ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslink.png?raw=true)
  2. HTTP API 
 ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/httplink.png?raw=true)
+3. GitHub 
+  Linked Azure Data Factory (ADF) to GitHub by creating a repository named CASESTUDY 
+  and made sure the repository was connected to the Dev branch. 
 
 ###  Creating Pipelines in ADF    
  1.Microsoft SQL Server to Storage:
   * Created a linked service for Microsoft SQL Server using a self-hosted integration 
-    runtime. 
-  * The data from SQL Server was transferred to the raw container in ADLS Gen2 
-    in CSV format. 
-  ![image alt]()
+    runtime. This enabled  to connect to the opremise  
+  *  Used the Copy Data activity to copy data from Microsoft SQL Server to the raw
+      container in ADLS Gen2 in CSV format.    
+  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssms%20pipiline.png?raw=true)
 
 2.HTTP API to Storage:
 * Created a linked service for[https://dummyjson.com/products] to fetch data in JSON 
   format. 
-* The data was stored in the raw container in Azure Data Lake Storage (ADLS) 
-  Gen2 in Parquet format.
-   ![image alt](https://github.com/bijibabu/CASESTUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
+*  Used Copy Data activity to fetch data from the HTTP API and save it in the raw
+ container in Azure Data Lake Storage (ADLS) in Parquet format. 
+   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
+
+## Quality Assurance Process
+ ### Creating a QA Branch 
+* After creating and testing the pipelines in the Dev branch, create a QA branch in the 
+  GitHub repository. 
+* Do the pull request from the Dev branch to the QA branch. 
+* After the pull request was approved, confirme the pipelines were deployed 
+  successfully in the QA branch of Data Factory.
+   
 
   

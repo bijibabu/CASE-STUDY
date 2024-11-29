@@ -52,17 +52,19 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/httplink.png?raw=true)
 
 ###  Creating Pipelines in ADF    
-  1.Microsoft SQL Server to Storage:
+ 1.Microsoft SQL Server to Storage:
   * Created a linked service for Microsoft SQL Server using a self-hosted integration 
     runtime. 
   * The data from SQL Server was transferred to the raw container in ADLS Gen2 
     in CSV format. 
-  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssms%20pipiline.png?raw=true)
+  ![image alt](https://github.com/bijibabu/CASE- 
+   STUDY/blob/main/Retail/screenshot/ssms%20pipiline.png?raw=true)
+
 2.HTTP API to Storage:
 * Created a linked service for[https://dummyjson.com/products] to fetch data in JSON 
   format. 
 * The data was stored in the raw container in Azure Data Lake Storage (ADLS) 
   Gen2 in Parquet format.
-   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
+   ![image alt](https://github.com/bijibabu/CASESTUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
 
   

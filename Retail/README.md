@@ -13,6 +13,7 @@
 * Azure Databricks: For data transformation and processing.
 * SQL Server (On-Premises): Source of data.
 * Http API :source of data
+* GitHub : for version control and managing the source code.
 
  ## Step 1:  on-premises SQL Server database
  SQL Server Management Studio (SSMS) is a powerful tool for managing SQL Server databases
@@ -22,6 +23,7 @@
    ### Creating the tables
   * Create a new database for your dataset 
   * Click on new query and write a SQL query to create a table.
+    ![](https://i.imgur.com/ssmslogin.png)
 
 ## Step 2: HTTP API database
 * Choose a framework/platform (e.g., Flask, Express.js, ASP.NET).

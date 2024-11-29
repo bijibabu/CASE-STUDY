@@ -44,9 +44,11 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
  
- ### create linked service 
- 1.Microsoft SQL Server 
+ ### create linked service
  
+ 1.Microsoft SQL Server 
+     ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslink.png?raw=true)
+ 2.   
  * use countineous integration to the pipeline
  * create dataset for adls and sql server
  * upload the data to the source and the sink

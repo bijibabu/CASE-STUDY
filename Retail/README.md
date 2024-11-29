@@ -57,5 +57,5 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
     runtime. 
   * The data from SQL Server was transferred to the raw container in ADLS Gen2 
     in CSV format. 
-
+  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/sqlserver%20pipeline.png?raw=true)
   

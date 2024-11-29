@@ -1,0 +1,9 @@
+{
+	"name": "casestudyfactory",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "82956a61-278d-43a2-b019-61bae4135ade",
+		"tenantId": "251930ab-c8eb-40aa-bc00-2e82019dc64f"
+	}
+}

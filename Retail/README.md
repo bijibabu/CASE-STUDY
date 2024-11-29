@@ -35,7 +35,7 @@ HTTP API (from[https://dummyjson.com/products] in JSON format)
 * Set up Azure Data Lake Storage with bronze, silver, and gold containers.
 ## Ingest Data with ADF
 ### Microsoft SQL Server to Storage: 
- * setting  a self-hosted integration runtime. This enabled  to connect to the opremise 
+ *  created a self-hosted integration runtime. This enabled  to connect to the opremise 
    SQL Server. 
 
    Go to  Integration Runtimes in ADF → Click on + New to Add Integration Runtime →
@@ -44,7 +44,9 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
  
- * create linked service for sql server and adls
+ ### create linked service 
+ 1.Microsoft SQL Server 
+ 
  * use countineous integration to the pipeline
  * create dataset for adls and sql server
  * upload the data to the source and the sink

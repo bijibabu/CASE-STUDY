@@ -80,11 +80,11 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 # Data Transformation in Databricks
 * Created a Databricks workspace and mounted the raw containers from 
  ADLS Gen2 to Databricks using secret scopes for secure access. 
-     dbutils.fs.mount(
-    source="wasbs://raw@<storage_account>.blob.core.windows.net",
-    mount_point="/mnt/raw",
+           dbutils.fs.mount(
+    source="wasbs://raw-server@<storage_account>.blob.core.windows.net",
+    mount_point="/mnt/raw-server",
     extra_configs={"fs.azure.account.key.<storage_account>.blob.core.windows.net": 
-                   dbutils.secrets.get(scope="<scope_name>", key="<key_name>")}
+                   dbutils.secrets.get(scope="casestudy", key="projectcase")}
 )
 
 

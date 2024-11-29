@@ -74,6 +74,9 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 * Do the pull request from the Dev branch to the QA branch. 
 * After the pull request was approved, confirme the pipelines were deployed 
   successfully in the QA branch of Data Factory.
+
+  # Data Transformation in Databricks
+  
    
 
   

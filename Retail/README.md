@@ -23,7 +23,7 @@
    ### Creating the tables
   * Create a new database for your dataset 
   * Click on new query and write a SQL query to create a table.
-     ![](https://i.imgur.com/ssmslogin.png)
+     ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslogin.png?raw=true)
 
 ## Step 2: HTTP API database
 * Choose a framework/platform (e.g., Flask, Express.js, ASP.NET).

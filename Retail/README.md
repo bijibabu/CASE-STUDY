@@ -44,17 +44,18 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
 
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
  
- ### create linked service
+ ### create linked service in ADF
  
  1.Microsoft SQL Server 
      ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslink.png?raw=true)
-     
  2. HTTP API 
 ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/httplink.png?raw=true)
- * use countineous integration to the pipeline
- * create dataset for adls and sql server
- * upload the data to the source and the sink
- * click publish and trigger
-   
-Data has been succesfully transfered from sql server &api to the bronze container in datalake storage account   
+
+###  Creating Pipelines in ADF    
+  1.Microsoft SQL Server to Storage:
+  * Created a linked service for Microsoft SQL Server using a self-hosted integration 
+    runtime. 
+  * The data from SQL Server was transferred to the raw container in ADLS Gen2 
+    in CSV format. 
+
   

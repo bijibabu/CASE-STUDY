@@ -43,8 +43,8 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/integration%20runtime.png?raw=true)
  ## GitHub Integration:
  
-    * Linked ADF to a GitHub repository for version control and team collaboration.
-    * I made sure the repository was connected to the Dev branch. 
+* Linked ADF to a GitHub repository for version control and team collaboration.
+* I made sure the repository was connected to the Dev branch. 
 
 
  ### create linked service in ADF

@@ -1,6 +1,6 @@
- # DATA LAKE PROJECT
+ # DATA LAKE HOUSE PROJECT
  
- A Data Lake is a centralized repository designed to store, process, and manage large volumes of structured, semi-structured, and unstructured data.A data lake centralizes raw data, allowing easy storage and access. It supports effective data management and analysis, enhancing decision-making. This setup ensures scalability and cost-efficiency. Key components include data ingestion, storage, processing, and governance
+ A Data Lake house is a centralized repository designed to store, process, and manage large volumes of structured, semi-structured, and unstructured data.A data lake centralizes raw data, allowing easy storage and access. It supports effective data management and analysis, enhancing decision-making. This setup ensures scalability and cost-efficiency. Key components include data ingestion, storage, processing, and governance
             
  ## Prerequisites
  * An Azure account with sufficient credits.
@@ -27,7 +27,7 @@
     ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/ssmslogin.png?raw=true)
 
 ## Step 2: HTTP API database
-HTTP API (from[https://dummyjson.com/products] in JSON format)
+HTTP API (from[https://AdventureWorks_Sales_2015.com/products] in JSON format)
   
 ## Step 3: Azure Environment Setup
 * Create Resource Group: Set up a new resource group in Azure.
@@ -70,6 +70,11 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
  container in Azure Data Lake Storage (ADLS) in Parquet format. 
    ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20pipeline.png?raw=true)
 
+## Triggers for Data Pipelines
+Used time-based triggers to initiate data pipelines for periodic data ingestion.
+A trigger was set for Pipeline 1 to pull the HTTP API  scheduled time.
+A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
+
 ## Quality Assurance Process
  ### Creating a QA Branch 
 * After creating and testing the pipelines in the Dev branch, create a QA branch in the 
@@ -80,14 +85,12 @@ Download SHIR Software and Copy Authentication Key → Install SHIR Software on 
   
 # Data Transformation in Databricks
 * Created a Databricks workspace and mounted the raw containers from 
- ADLS Gen2 to Databricks using secret scopes for secure access. 
+ ADLS Gen2 to Databricks using secret scopes for secure access by using
+ service principle. 
 
-                          dbutils.fs.mount(
-           source="wasbs://raw-server@<storage_account>.blob.core.windows.net",
-           mount_point="/mnt/raw-server",
-           extra_configs={"fs.azure.account.key.<storage_account>.blob.core.windows.net": 
-                   dbutils.secrets.get(scope="casestudy", key="projectcase")}
-)
+## on-premise
+*  Here using service princple mounted both raw and processed containers.
+
 
 
   

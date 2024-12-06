@@ -112,6 +112,15 @@ A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
 
  ### Azure synapse
  * Created an external table in Azure Synapse Analytics to to enable querying the processed data. This step allowed
- *users to run SQL queries over the Gold container's data for reporting, analysis, and decision-making.
+ * users to run SQL queries over the Gold container's data for reporting, analysis, and decision-making.
+   ## steps for cteating a dedicated pool
+* Navigate to Synapse Workspace
+* Open the Azure portal and navigate to your Synapse workspace.
+* Create a Dedicated SQL Pool: Go to SQL Pools under Synapse Studio > Manage.
+* Click New SQL Pool.
+* give it a name
+* Performance Level: Choose the desired performance level as 0
+* Click Create and wait for deployment.
+   
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/azure%20synapse.png?raw=true)
   

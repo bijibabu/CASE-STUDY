@@ -92,6 +92,7 @@ A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
 *  Here using service princple mounted both raw and processed containers.
    ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/onpremise%20start.png?raw=true)
     ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/mount%20onpremise.png?raw=true)
+   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/mount%20processed.png?raw=true)
 
 
   

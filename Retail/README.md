@@ -106,5 +106,6 @@ A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
    ## http data
   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20m.png?raw=true)
   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20r.png?raw=true)
- ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20r2.png?raw=true)   
+ ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20r2.png?raw=true)
+ ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20r3.png?raw=true)  
   

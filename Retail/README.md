@@ -111,5 +111,7 @@ A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
 ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/http%20delta.png?raw=true)
 
  ### Azure synapse
+ * Created an external table in Azure Synapse Analytics to to enable querying the processed data. This step allowed
+ *users to run SQL queries over the Gold container's data for reporting, analysis, and decision-making.
  ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/azure%20synapse.png?raw=true)
   

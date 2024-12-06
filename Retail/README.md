@@ -14,6 +14,7 @@
 * SQL Server (On-Premises): Source of data.
 * Http API :source of data
 * GitHub : for version control and managing the source code.
+* azure synapse analytics
 
  ## Step 1:  on-premises SQL Server database
  SQL Server Management Studio (SSMS) is a powerful tool for managing SQL Server databases

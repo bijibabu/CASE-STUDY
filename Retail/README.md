@@ -95,4 +95,4 @@ A trigger for Pipeline 2 to pull data from SQL Server on a regular basis.
    ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/mount%20processed.png?raw=true)
 
 * Readin and cleaning the data
-  
+   ![image alt](https://github.com/bijibabu/CASE-STUDY/blob/main/Retail/screenshot/onpremise%20read.png?raw=true)
